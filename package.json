@@ -4,6 +4,7 @@
   "description": "A quick start template to kickstart a Node Express Api application using Sequelize ORM, Mocha Cha chai-http as test suites",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js --exec babel-node --presets env",
     "test": "mocha --recursive --require babel-register || true"
   },
   "repository": {
@@ -36,5 +37,13 @@
     "express": "^4.16.3",
     "morgan": "^1.9.0",
     "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "nodemon": "^1.18.3"
   }
 }
