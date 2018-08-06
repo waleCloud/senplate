@@ -7,6 +7,7 @@
 import express from 'express';
 import logger from 'morgan';
 import bodyParser from 'body-parser';
+import { } from  'dotenv/config';
 
 const app = express();
 
