@@ -1,0 +1,33 @@
+{
+  "name": "senplate",
+  "version": "1.0.0",
+  "description": "A quick start template to kickstart a Node Express Api application using Sequelize ORM, Mocha Cha chai-http as test suites",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --require babel-register || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andela-git/senplate.git"
+  },
+  "keywords": [
+    "Express",
+    "application",
+    "bootstrap",
+    "Express",
+    "Sequelize",
+    "ORM",
+    "Node",
+    "Postgres",
+    "Mysql",
+    "Mongo",
+    "Web",
+    "framework"
+  ],
+  "author": "Abdulwahid Olawale",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andela-git/senplate/issues"
+  },
+  "homepage": "https://github.com/andela-git/senplate#readme"
+}
