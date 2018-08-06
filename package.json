@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js --exec babel-node --presets env",
-    "test": "mocha --recursive --require babel-register || true"
+    "test": "./node_modules/mocha/bin/mocha --recursive --require babel-register || true"
   },
   "repository": {
     "type": "git",
@@ -44,6 +44,9 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-2": "^6.24.1",
     "babel-register": "^6.26.0",
+    "chai": "^4.1.2",
+    "chai-http": "^4.0.0",
+    "mocha": "^5.2.0",
     "nodemon": "^1.18.3"
   }
 }
