@@ -4,15 +4,9 @@
 #
 version: 2
 jobs:
-  # build:
-    # docker:
-      # specify the version you desire here
-      # - image: circleci/node:7.10
-      
-      # Specify service dependencies here if necessary
-      # CircleCI maintains a library of pre-built images
-      # documented at https://circleci.com/docs/2.0/circleci-images/
-      # - image: circleci/mongo:3.4.4
+    build:
+      environment:
+        CC_TEST_REPORTER_ID: 198ceeabd4484677a67b0f6b1a6949b95d8d7ca04b01981928478e477a1be6db
 
     working_directory: ~/repo
 
@@ -27,6 +21,11 @@ jobs:
           - v1-dependencies-
 
       - run: npm install
+      - run:
+          name: Setup Code Climate test-reporter
+          command: |
+            curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+            chmod +x ./cc-test-reporter
 
       - save_cache:
           paths:
