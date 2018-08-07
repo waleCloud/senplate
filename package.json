@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon index.js --exec babel-node --presets env",
-    "test": "nyc --reporter=html --reporter=text ./node_modules/mocha/bin/mocha --recursive --require babel-register || true",  
-    "coverage": "nyc report --reporter=text-lcov | coveralls"
+    "test": "nyc --reporter=html --reporter=text ./node_modules/mocha/bin/mocha --recursive --require babel-register --timeout 10000 --exit",
+    "coveralls": "nyc report --reporter=text-lcov"
   },
   "repository": {
     "type": "git",
