@@ -51,8 +51,8 @@ Parse incoming request bodies in a middleware before your handlers, available un
 #### TODO
 The project needs to be built into a CLI to npm tool such that with just one command, an install can be made.
 something like;
-`npm install -g senplate`
-`sen create <app name>`
-`cd <app name>`
-`sen do controller User`
-`sen do model:migration User`
+* `npm install -g senplate`
+* `sen create <app name>`
+* `cd <app name>`
+* `sen do controller User`
+* `sen do model:migration User`
