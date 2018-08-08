@@ -23,9 +23,8 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-        - run: npm install
-        - run:
-          name: Setup Code Climate test-reporter
+        - run: 
+          - npm install
           command:
             - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
             - chmod +x ./cc-test-reporter
