@@ -24,10 +24,9 @@ jobs:
             - v1-dependencies-
 
         - run: 
-          - npm install
-          command:
-            - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-            - chmod +x ./cc-test-reporter
+          - npm install --force
+          - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+          - chmod +x ./cc-test-reporter
 
         - save_cache:
             paths:
